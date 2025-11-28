@@ -1,4 +1,3 @@
-// Portfolio code should be pasted here
 import React from "react";
 
 export default function Portfolio() {
@@ -13,6 +12,15 @@ export default function Portfolio() {
           <a href="#skills" className="hover:text-blue-600">Skills</a>
           <a href="#projects" className="hover:text-blue-600">Projects</a>
           <a href="#contact" className="hover:text-blue-600">Contact</a>
+
+          {/* Resume in Navbar */}
+          <a 
+            href="/Shiva_Resume.pdf" 
+            download
+            className="hover:text-blue-600"
+          >
+            Resume
+          </a>
         </div>
       </nav>
 
@@ -31,13 +39,27 @@ export default function Portfolio() {
           </p>
 
           <div className="mt-4 flex gap-4">
-            <a href="#projects" className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+            <a 
+              href="#projects" 
+              className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+            >
               View Projects
             </a>
-            <a href="/Shiva_Resume.pdf" className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition">
+
+            {/* Download Resume Button */}
+            <a 
+              href="/Shiva_Resume.pdf" 
+              download 
+              className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition"
+            >
               Download Resume
             </a>
-            <a href="https://github.com/Deshishiva" target="_blank" className="px-6 py-3 border border-gray-400 text-gray-700 rounded-lg hover:bg-gray-100 transition">
+
+            <a 
+              href="https://github.com/Deshishiva" 
+              target="_blank" 
+              className="px-6 py-3 border border-gray-400 text-gray-700 rounded-lg hover:bg-gray-100 transition"
+            >
               GitHub
             </a>
           </div>
@@ -71,14 +93,26 @@ export default function Portfolio() {
               <h4 className="text-xl font-semibold">Pipeline Builder</h4>
               <p className="text-gray-700 mt-2">A full-stack workflow builder using React and Node.js.</p>
               <p className="mt-2 text-sm text-gray-600">Tech: React, Node.js, Express</p>
-              <a href="https://github.com/Deshishiva/pipeline-builder" target="_blank" className="inline-block mt-3 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">GitHub</a>
+              <a 
+                href="https://github.com/Deshishiva/pipeline-builder" 
+                target="_blank" 
+                className="inline-block mt-3 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+              >
+                GitHub
+              </a>
             </div>
 
             <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition bg-white">
               <h4 className="text-xl font-semibold">Shop – E-commerce App</h4>
               <p className="text-gray-700 mt-2">A full-stack e-commerce app with clean UI.</p>
               <p className="mt-2 text-sm text-gray-600">Tech: React, Node.js</p>
-              <a href="https://github.com/Deshishiva/shop" target="_blank" className="inline-block mt-3 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">GitHub</a>
+              <a 
+                href="https://github.com/Deshishiva/shop" 
+                target="_blank" 
+                className="inline-block mt-3 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+              >
+                GitHub
+              </a>
             </div>
           </div>
 
@@ -89,7 +123,16 @@ export default function Portfolio() {
             <div className="flex flex-col gap-3 text-gray-800 text-md">
               <p><strong>Email:</strong> dshivakumar2031@gmail.com</p>
               <p><strong>Phone:</strong> +91 6281043752</p>
-              <p><strong>GitHub:</strong> <a href="https://github.com/Deshishiva" target="_blank" className="text-blue-600 hover:underline">github.com/Deshishiva</a></p>
+              <p>
+                <strong>GitHub:</strong> 
+                <a 
+                  href="https://github.com/Deshishiva" 
+                  target="_blank" 
+                  className="text-blue-600 hover:underline"
+                >
+                  github.com/Deshishiva
+                </a>
+              </p>
             </div>
           </div>
 
@@ -98,4 +141,3 @@ export default function Portfolio() {
     </>
   );
 }
-
