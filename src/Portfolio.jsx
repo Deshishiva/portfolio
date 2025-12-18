@@ -68,8 +68,7 @@ export default function Portfolio() {
           <div id="about" className="mt-16 flex flex-col gap-4">
             <h3 className="text-2xl font-semibold">About Me</h3>
             <p className="text-lg max-w-2xl text-gray-700">
-              I’m a front-end developer focused on building clean, responsive, and scalable websites using React, JavaScript, and TypeScript.
-              I also work with Node.js, Express, Java, and Python.
+              I’m a Front-End Developer focused on building clean, responsive, and scalable web applications using React, JavaScript, and TypeScript. I also have hands-on experience with Node.js and Express, along with working knowledge of Java and Python, and a strong problem-solving mindset.
             </p>
           </div>
 
