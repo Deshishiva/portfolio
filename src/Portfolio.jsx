@@ -15,7 +15,7 @@ export default function Portfolio() {
 
           {/* Resume in Navbar */}
           <a 
-            href="/Shiva_Resume.pdf" 
+            href="/cv.pdf" 
             download
             className="hover:text-blue-600"
           >
@@ -48,7 +48,7 @@ export default function Portfolio() {
 
             {/* Download Resume Button */}
             <a 
-              href="/Shiva_Resume.pdf" 
+              href="/cv.pdf" 
               download 
               className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition"
             >
