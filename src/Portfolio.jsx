@@ -173,8 +173,20 @@ export default function Portfolio() {
             <h3 className="text-2xl font-semibold">Contact</h3>
 
             <div className="flex flex-col gap-3 text-gray-800 text-md">
-              <p><strong>Email:</strong> dshivakumar2031@gmail.com</p>
-              <p><strong>Phone:</strong> +91 6281043752</p>
+              <p>
+                <strong>Email:</strong>
+                <a href="mailto:dshivakumar2031@gmail.com" className="text-blue-600 hover:underline">
+                  dshivakumar2031@gmail.com
+                </a>
+              </p>
+
+              <p>
+                <strong>Phone:</strong>
+                <a href="tel:+916281043752" className="text-blue-600 hover:underline">
+                  +91 6281043752
+                </a>
+              </p>
+
               <p>
                 <strong>GitHub:</strong>
                 <a href="https://github.com/Deshishiva" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
