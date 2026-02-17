@@ -2,7 +2,7 @@ import React from "react";
 
 const projects = [
   {
-    name: "Gupp – Multi-Personality AI Assistant",
+    name: "Gupp  Multi-Personality AI Assistant",
     description:
       "A full-stack conversational AI assistant that supports multiple interaction modes and personality-based responses.",
     tech: "React, Node.js, Express, AI Integration",
@@ -79,7 +79,7 @@ export default function Portfolio() {
               View Projects
             </a>
 
-            <a href="/cv.pdf" download className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition">
+            <a href="/shivaresume.pdf" download className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition">
               Download Resume
             </a>
 
