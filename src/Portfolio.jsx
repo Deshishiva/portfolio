@@ -2,7 +2,7 @@ import React from "react";
 
 const projects = [
   {
-    name: "Gupp  Multi-Personality AI Assistant",
+    name: "Gupp – Multi-Personality AI Assistant",
     description:
       "A full-stack conversational AI assistant that supports multiple interaction modes and personality-based responses.",
     tech: "React, Node.js, Express, AI Integration",
@@ -56,7 +56,7 @@ export default function Portfolio() {
           <a href="#skills" className="hover:text-blue-600">Skills</a>
           <a href="#projects" className="hover:text-blue-600">Projects</a>
           <a href="#contact" className="hover:text-blue-600">Contact</a>
-          <a href="/cv.pdf" download className="hover:text-blue-600">
+          <a href="/shivaresume.pdf" download className="hover:text-blue-600">
             Resume
           </a>
         </div>
@@ -67,11 +67,11 @@ export default function Portfolio() {
 
           <h1 className="text-4xl font-bold">Shiva Kumar Deshi</h1>
           <h2 className="text-xl text-gray-700">
-            Front-End Developer (React, JavaScript, TypeScript)
+            Software Developer (Full Stack – Frontend Focused)
           </h2>
 
           <p className="text-lg max-w-2xl">
-            I transform complex ideas into fast, scalable, and visually refined websites using React, JavaScript, and TypeScript.
+            I build full-stack web applications by combining modern frontend technologies with scalable backend systems to create seamless and user-focused digital experiences.
           </p>
 
           <div className="mt-4 flex gap-4">
@@ -91,7 +91,7 @@ export default function Portfolio() {
           <div id="about" className="mt-16 flex flex-col gap-4">
             <h3 className="text-2xl font-semibold">About Me</h3>
             <p className="text-lg max-w-2xl text-gray-700">
-              I’m a Front-End Developer focused on building clean, responsive, and scalable web applications using React, JavaScript, and TypeScript.
+              I am a Software Developer with strong expertise in frontend development using React, JavaScript, and TypeScript, along with hands-on experience in backend development using Node.js and Express. I specialize in building full-stack web applications that are responsive, scalable, and performance-focused by integrating REST APIs, authentication systems, and modern UI practices to deliver seamless user experiences.
             </p>
           </div>
 
