@@ -77,7 +77,7 @@ export default function Portfolio() {
           </h2>
 
           <p className="text-lg max-w-2xl">
-            I build full-stack web applications by combining modern frontend technologies with scalable backend systems to create seamless and user-focused digital experiences.
+            I design and develop full-stack web applications by combining modern frontend technologies with scalable backend systems, focusing on performance, usability, and seamless user experience.
           </p>
 
           <div className="mt-4 flex gap-4">
