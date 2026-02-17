@@ -54,7 +54,6 @@ const projects = [
 export default function Portfolio() {
   return (
     <>
-      {/* Navbar */}
       <nav className="w-full fixed top-0 left-0 bg-white shadow-sm z-50 py-4 px-6 flex justify-between items-center">
         <h1 className="text-xl font-bold">Shiva Kumar Deshi</h1>
 
@@ -69,11 +68,9 @@ export default function Portfolio() {
         </div>
       </nav>
 
-      {/* Body */}
       <div className="pt-24 min-h-screen bg-gradient-to-br from-blue-50 to-white text-gray-900 p-10">
         <div className="max-w-6xl mx-auto flex flex-col gap-6 items-start text-left">
 
-          {/* Hero */}
           <h1 className="text-4xl font-bold">Shiva Kumar Deshi</h1>
           <h2 className="text-xl text-gray-700">
             Software Developer (Full Stack – Frontend Focused)
@@ -119,6 +116,10 @@ export default function Portfolio() {
 
             <p className="text-gray-700">
               <strong>Backend Technologies:</strong> Node.js, Express, REST APIs
+            </p>
+
+            <p className="text-gray-700">
+              <strong>Database:</strong> MongoDB, SQLite, Prisma ORM
             </p>
 
             <p className="text-gray-700">
