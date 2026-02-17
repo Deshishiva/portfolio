@@ -15,7 +15,7 @@ const projects = [
       "An AI-powered application that generates Instagram captions, hashtags, and brand taglines using local LLM models.",
     tech: "Next.js, Node.js, TypeScript, Ollama",
     github: "https://github.com/Deshishiva/ai-marketing-generator",
-    live: "#",
+    live: null,
   },
   {
     name: "Bolo – Full Stack Web Application",
@@ -42,14 +42,13 @@ const projects = [
     live: "https://personal-task-management-lime.vercel.app",
   },
   {
-  name: "UI Development Projects",
-  description:
-    "A collection of responsive UI applications focused on modern layouts and component-based design.",
-  tech: "React, HTML, CSS, JavaScript",
-  github: "https://github.com/Deshishiva/UI",
-  live: "https://ui-orpin-nu.vercel.app/",
-},
-
+    name: "UI Development Projects",
+    description:
+      "A collection of responsive UI applications focused on modern layouts and component-based design.",
+    tech: "React, HTML, CSS, JavaScript",
+    github: "https://github.com/Deshishiva/UI",
+    live: "https://ui-orpin-nu.vercel.app/",
+  },
 ];
 
 export default function Portfolio() {
@@ -72,7 +71,7 @@ export default function Portfolio() {
 
       {/* Body */}
       <div className="pt-24 min-h-screen bg-gradient-to-br from-blue-50 to-white text-gray-900 p-10">
-        <div className="max-w-3xl mx-auto flex flex-col gap-6 items-start text-left">
+        <div className="max-w-5xl mx-auto flex flex-col gap-6 items-start text-left">
 
           {/* Hero */}
           <h1 className="text-4xl font-bold">Shiva Kumar Deshi</h1>
@@ -101,7 +100,7 @@ export default function Portfolio() {
           {/* About */}
           <div id="about" className="mt-16 flex flex-col gap-4">
             <h3 className="text-2xl font-semibold">About Me</h3>
-            <p className="text-lg max-w-2xl text-gray-700">
+            <p className="text-lg max-w-3xl text-gray-700">
               I am a Software Developer with strong expertise in frontend development using React, JavaScript, and TypeScript, along with hands-on experience in backend development using Node.js and Express. I specialize in building full-stack web applications that are responsive, scalable, and performance-focused by integrating REST APIs, authentication systems, and modern UI practices to deliver seamless user experiences.
             </p>
           </div>
@@ -119,34 +118,38 @@ export default function Portfolio() {
           </div>
 
           {/* Projects */}
-          <div id="projects" className="mt-16 flex flex-col gap-6">
-            <h3 className="text-2xl font-semibold">Projects</h3>
+          <div id="projects" className="mt-16 w-full">
+            <h3 className="text-2xl font-semibold mb-6">Projects</h3>
 
-            {projects.map((project, index) => (
-              <div key={index} className="p-6 border rounded-xl shadow-sm hover:shadow-md transition bg-white">
-                <h4 className="text-xl font-semibold">{project.name}</h4>
-                <p className="text-gray-700 mt-2">{project.description}</p>
-                <p className="mt-2 text-sm text-gray-600">Tech: {project.tech}</p>
+            <div className="grid md:grid-cols-2 gap-6">
+              {projects.map((project, index) => (
+                <div key={index} className="p-6 border rounded-xl shadow-sm hover:shadow-md transition bg-white">
+                  <h4 className="text-xl font-semibold">{project.name}</h4>
+                  <p className="text-gray-700 mt-2">{project.description}</p>
+                  <p className="mt-2 text-sm text-gray-600">Tech: {project.tech}</p>
 
-                <div className="flex gap-3 mt-4">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-                  >
-                    GitHub
-                  </a>
+                  <div className="flex gap-3 mt-4">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+                    >
+                      GitHub
+                    </a>
 
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    className="px-4 py-2 border border-green-600 text-green-600 rounded-lg hover:bg-green-50 transition"
-                  >
-                    Live Demo
-                  </a>
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        className="px-4 py-2 border border-green-600 text-green-600 rounded-lg hover:bg-green-50 transition"
+                      >
+                        Live Demo
+                      </a>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           {/* Contact */}
