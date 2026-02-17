@@ -7,6 +7,7 @@ const projects = [
       "A full-stack conversational AI assistant that supports multiple interaction modes and personality-based responses.",
     tech: "React, Node.js, Express, AI Integration",
     github: "https://github.com/Deshishiva/gupp",
+    live: "https://gupp.netlify.app/",
   },
   {
     name: "AI Marketing Generator",
@@ -14,6 +15,7 @@ const projects = [
       "An AI-powered application that generates Instagram captions, hashtags, and brand taglines using local LLM models.",
     tech: "Next.js, Node.js, TypeScript, Ollama",
     github: "https://github.com/Deshishiva/ai-marketing-generator",
+    live: "#",
   },
   {
     name: "Bolo – Full Stack Web Application",
@@ -21,6 +23,7 @@ const projects = [
       "A full-stack web application demonstrating modern frontend and backend development practices.",
     tech: "React, Node.js, Express",
     github: "https://github.com/Deshishiva/bolo",
+    live: "https://bolo-jet.vercel.app/",
   },
   {
     name: "EchoChat – Modern Chat UI",
@@ -28,6 +31,7 @@ const projects = [
       "A modern chat interface built using Next.js and Tailwind CSS with real-time UI simulation.",
     tech: "Next.js, React, Tailwind CSS",
     github: "https://github.com/Deshishiva/echochat",
+    live: "https://echochat-kappa.vercel.app/",
   },
   {
     name: "Personal Task Manager",
@@ -35,19 +39,23 @@ const projects = [
       "A full-stack task management system using JWT-based authentication for secure user tasks.",
     tech: "Next.js, Node.js, Prisma, JWT",
     github: "https://github.com/Deshishiva/Personal-task-management-",
+    live: "https://personal-task-management-lime.vercel.app",
   },
   {
-    name: "UI Development Projects",
-    description:
-      "A collection of responsive UI projects focused on component-based architecture and modern design.",
-    tech: "React, HTML, CSS, JavaScript",
-    github: "https://github.com/Deshishiva",
-  },
+  name: "UI Development Projects",
+  description:
+    "A collection of responsive UI applications focused on modern layouts and component-based design.",
+  tech: "React, HTML, CSS, JavaScript",
+  github: "https://github.com/Deshishiva/UI",
+  live: "https://ui-orpin-nu.vercel.app/",
+},
+
 ];
 
 export default function Portfolio() {
   return (
     <>
+      {/* Navbar */}
       <nav className="w-full fixed top-0 left-0 bg-white shadow-sm z-50 py-4 px-6 flex justify-between items-center">
         <h1 className="text-xl font-bold">Shiva Kumar Deshi</h1>
 
@@ -62,9 +70,11 @@ export default function Portfolio() {
         </div>
       </nav>
 
+      {/* Body */}
       <div className="pt-24 min-h-screen bg-gradient-to-br from-blue-50 to-white text-gray-900 p-10">
         <div className="max-w-3xl mx-auto flex flex-col gap-6 items-start text-left">
 
+          {/* Hero */}
           <h1 className="text-4xl font-bold">Shiva Kumar Deshi</h1>
           <h2 className="text-xl text-gray-700">
             Software Developer (Full Stack – Frontend Focused)
@@ -88,6 +98,7 @@ export default function Portfolio() {
             </a>
           </div>
 
+          {/* About */}
           <div id="about" className="mt-16 flex flex-col gap-4">
             <h3 className="text-2xl font-semibold">About Me</h3>
             <p className="text-lg max-w-2xl text-gray-700">
@@ -95,6 +106,7 @@ export default function Portfolio() {
             </p>
           </div>
 
+          {/* Skills */}
           <div id="skills" className="mt-16 flex flex-col gap-4">
             <h3 className="text-2xl font-semibold">Skills</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-gray-700 text-lg">
@@ -106,6 +118,7 @@ export default function Portfolio() {
             </div>
           </div>
 
+          {/* Projects */}
           <div id="projects" className="mt-16 flex flex-col gap-6">
             <h3 className="text-2xl font-semibold">Projects</h3>
 
@@ -114,17 +127,29 @@ export default function Portfolio() {
                 <h4 className="text-xl font-semibold">{project.name}</h4>
                 <p className="text-gray-700 mt-2">{project.description}</p>
                 <p className="mt-2 text-sm text-gray-600">Tech: {project.tech}</p>
-                <a
-                  href={project.github}
-                  target="_blank"
-                  className="inline-block mt-3 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-                >
-                  GitHub
-                </a>
+
+                <div className="flex gap-3 mt-4">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+                  >
+                    GitHub
+                  </a>
+
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    className="px-4 py-2 border border-green-600 text-green-600 rounded-lg hover:bg-green-50 transition"
+                  >
+                    Live Demo
+                  </a>
+                </div>
               </div>
             ))}
           </div>
 
+          {/* Contact */}
           <div id="contact" className="mt-16 flex flex-col gap-4">
             <h3 className="text-2xl font-semibold">Contact</h3>
             <p className="text-gray-700 text-lg">Feel free to reach out!</p>
