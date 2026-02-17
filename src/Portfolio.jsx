@@ -107,14 +107,27 @@ export default function Portfolio() {
 
           {/* Skills */}
           <div id="skills" className="mt-16 flex flex-col gap-4">
-            <h3 className="text-2xl font-semibold">Skills</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-gray-700 text-lg">
-              <span>React</span><span>JavaScript</span><span>TypeScript</span>
-              <span>HTML</span><span>CSS</span><span>Tailwind CSS</span>
-              <span>Node.js</span><span>Express</span><span>REST APIs</span>
-              <span>Java</span><span>Python</span><span>Git</span>
-              <span>GitHub</span><span>VS Code</span><span>Postman</span><span>Vercel</span>
-            </div>
+            <h3 className="text-2xl font-semibold">Technical Skills</h3>
+
+            <p className="text-gray-700">
+              <strong>Programming Languages:</strong> JavaScript, TypeScript, Python
+            </p>
+
+            <p className="text-gray-700">
+              <strong>Frontend Technologies:</strong> React.js, HTML, CSS, Tailwind CSS, Responsive Design
+            </p>
+
+            <p className="text-gray-700">
+              <strong>Backend Technologies:</strong> Node.js, Express, REST APIs
+            </p>
+
+            <p className="text-gray-700">
+              <strong>DSA & Problem Solving:</strong> Arrays, Strings, Hash Maps, Basic Algorithms, Time & Space Complexity
+            </p>
+
+            <p className="text-gray-700">
+              <strong>Tools & Platforms:</strong> Git, GitHub, Vercel, Netlify, Postman
+            </p>
           </div>
 
           {/* Projects */}
