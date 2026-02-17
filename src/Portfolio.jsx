@@ -157,7 +157,7 @@ export default function Portfolio() {
           {/* Contact */}
           <div id="contact" className="mt-16 flex flex-col gap-4">
             <h3 className="text-2xl font-semibold">Contact</h3>
-            <p className="text-gray-700 text-lg">Feel free to reach out!</p>
+
             <div className="flex flex-col gap-3 text-gray-800 text-md">
               <p><strong>Email:</strong> dshivakumar2031@gmail.com</p>
               <p><strong>Phone:</strong> +91 6281043752</p>
@@ -168,6 +168,8 @@ export default function Portfolio() {
                 </a>
               </p>
             </div>
+
+            <p className="text-gray-700 text-lg">Feel free to reach out!</p>
           </div>
 
         </div>
