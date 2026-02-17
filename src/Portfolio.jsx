@@ -48,7 +48,6 @@ const projects = [
 export default function Portfolio() {
   return (
     <>
-      {/* Navbar */}
       <nav className="w-full fixed top-0 left-0 bg-white shadow-sm z-50 py-4 px-6 flex justify-between items-center">
         <h1 className="text-xl font-bold">Shiva Kumar Deshi</h1>
 
@@ -63,11 +62,9 @@ export default function Portfolio() {
         </div>
       </nav>
 
-      {/* Body */}
       <div className="pt-24 min-h-screen bg-gradient-to-br from-blue-50 to-white text-gray-900 p-10">
         <div className="max-w-3xl mx-auto flex flex-col gap-6 items-start text-left">
 
-          {/* Hero */}
           <h1 className="text-4xl font-bold">Shiva Kumar Deshi</h1>
           <h2 className="text-xl text-gray-700">
             Front-End Developer (React, JavaScript, TypeScript)
@@ -78,31 +75,19 @@ export default function Portfolio() {
           </p>
 
           <div className="mt-4 flex gap-4">
-            <a
-              href="#projects"
-              className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-            >
+            <a href="#projects" className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
               View Projects
             </a>
 
-            <a
-              href="/cv.pdf"
-              download
-              className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition"
-            >
+            <a href="/cv.pdf" download className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition">
               Download Resume
             </a>
 
-            <a
-              href="https://github.com/Deshishiva"
-              target="_blank"
-              className="px-6 py-3 border border-gray-400 text-gray-700 rounded-lg hover:bg-gray-100 transition"
-            >
+            <a href="https://github.com/Deshishiva" target="_blank" className="px-6 py-3 border border-gray-400 text-gray-700 rounded-lg hover:bg-gray-100 transition">
               GitHub
             </a>
           </div>
 
-          {/* About */}
           <div id="about" className="mt-16 flex flex-col gap-4">
             <h3 className="text-2xl font-semibold">About Me</h3>
             <p className="text-lg max-w-2xl text-gray-700">
@@ -110,7 +95,6 @@ export default function Portfolio() {
             </p>
           </div>
 
-          {/* Skills */}
           <div id="skills" className="mt-16 flex flex-col gap-4">
             <h3 className="text-2xl font-semibold">Skills</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-gray-700 text-lg">
@@ -122,15 +106,11 @@ export default function Portfolio() {
             </div>
           </div>
 
-          {/* Projects */}
           <div id="projects" className="mt-16 flex flex-col gap-6">
             <h3 className="text-2xl font-semibold">Projects</h3>
 
             {projects.map((project, index) => (
-              <div
-                key={index}
-                className="p-6 border rounded-xl shadow-sm hover:shadow-md transition bg-white"
-              >
+              <div key={index} className="p-6 border rounded-xl shadow-sm hover:shadow-md transition bg-white">
                 <h4 className="text-xl font-semibold">{project.name}</h4>
                 <p className="text-gray-700 mt-2">{project.description}</p>
                 <p className="mt-2 text-sm text-gray-600">Tech: {project.tech}</p>
@@ -145,7 +125,6 @@ export default function Portfolio() {
             ))}
           </div>
 
-          {/* Contact */}
           <div id="contact" className="mt-16 flex flex-col gap-4">
             <h3 className="text-2xl font-semibold">Contact</h3>
             <p className="text-gray-700 text-lg">Feel free to reach out!</p>
@@ -154,11 +133,7 @@ export default function Portfolio() {
               <p><strong>Phone:</strong> +91 6281043752</p>
               <p>
                 <strong>GitHub:</strong>
-                <a
-                  href="https://github.com/Deshishiva"
-                  target="_blank"
-                  className="text-blue-600 hover:underline"
-                >
+                <a href="https://github.com/Deshishiva" target="_blank" className="text-blue-600 hover:underline">
                   github.com/Deshishiva
                 </a>
               </p>

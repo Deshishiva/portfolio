@@ -1,23 +1,44 @@
 # 🌐 Shiva Kumar Deshi — Personal Portfolio
 
-A modern, responsive portfolio built using **React**, **Tailwind CSS**, and **AOS animations**.
+A modern and responsive personal portfolio built using React and Tailwind CSS to showcase my projects, skills, and development experience.
+
+---
 
 ## 🚀 Live Demo
-(Add your Vercel link here)
+
+https://rtfolio-hph2.vercel.app/
+
+---
 
 ## 🛠 Tech Stack
+
 - React.js
 - Tailwind CSS
-- AOS Animation Library
+- JavaScript
 - Responsive Layout
 - Vercel Deployment
 
+---
+
 ## 📦 Installation
-```
-npm install
-npm start
-```
+
+Clone the repository:
+
+git clone https://github.com/Deshishiva/portfolio.git  
+cd portfolio  
+
+Install dependencies:
+
+npm install  
+
+Start development server:
+
+npm start  
+
+---
 
 ## 📬 Contact
-- Email: dshivakumar2031@gmail.com
-- GitHub: https://github.com/Deshishiva
+
+-  Email: dshivakumar2031@gmail.com  
+-  GitHub: https://github.com/Deshishiva
+ - Phone number: +91 6281043752
