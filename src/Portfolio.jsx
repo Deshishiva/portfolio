@@ -71,7 +71,7 @@ export default function Portfolio() {
 
       {/* Body */}
       <div className="pt-24 min-h-screen bg-gradient-to-br from-blue-50 to-white text-gray-900 p-10">
-        <div className="max-w-5xl mx-auto flex flex-col gap-6 items-start text-left">
+        <div className="max-w-6xl mx-auto flex flex-col gap-6 items-start text-left">
 
           {/* Hero */}
           <h1 className="text-4xl font-bold">Shiva Kumar Deshi</h1>
@@ -92,7 +92,7 @@ export default function Portfolio() {
               Download Resume
             </a>
 
-            <a href="https://github.com/Deshishiva" target="_blank" className="px-6 py-3 border border-gray-400 text-gray-700 rounded-lg hover:bg-gray-100 transition">
+            <a href="https://github.com/Deshishiva" target="_blank" rel="noopener noreferrer" className="px-6 py-3 border border-gray-400 text-gray-700 rounded-lg hover:bg-gray-100 transition">
               GitHub
             </a>
           </div>
@@ -123,7 +123,7 @@ export default function Portfolio() {
 
             <div className="grid md:grid-cols-2 gap-6">
               {projects.map((project, index) => (
-                <div key={index} className="p-6 border rounded-xl shadow-sm hover:shadow-md transition bg-white">
+                <div key={index} className="p-6 border rounded-xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition transform bg-white">
                   <h4 className="text-xl font-semibold">{project.name}</h4>
                   <p className="text-gray-700 mt-2">{project.description}</p>
                   <p className="mt-2 text-sm text-gray-600">Tech: {project.tech}</p>
@@ -132,6 +132,7 @@ export default function Portfolio() {
                     <a
                       href={project.github}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
                     >
                       GitHub
@@ -141,6 +142,7 @@ export default function Portfolio() {
                       <a
                         href={project.live}
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="px-4 py-2 border border-green-600 text-green-600 rounded-lg hover:bg-green-50 transition"
                       >
                         Live Demo
@@ -161,7 +163,7 @@ export default function Portfolio() {
               <p><strong>Phone:</strong> +91 6281043752</p>
               <p>
                 <strong>GitHub:</strong>
-                <a href="https://github.com/Deshishiva" target="_blank" className="text-blue-600 hover:underline">
+                <a href="https://github.com/Deshishiva" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                   github.com/Deshishiva
                 </a>
               </p>
